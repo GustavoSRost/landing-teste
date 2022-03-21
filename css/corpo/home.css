@@ -1,0 +1,10 @@
+.home-textos{
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.home-textos h1{
+  margin-bottom: 1rem;
+}

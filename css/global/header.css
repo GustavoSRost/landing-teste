@@ -1,0 +1,47 @@
+.navbar {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  flex-direction: row;
+  background: none;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+.menu {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5em;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.menu a {
+  display: inline-block;
+  position: relative;
+}
+.menu a::after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 2px;
+  width: 0%;
+  background: var(--cor-p5);
+  margin-top: 4px;
+  transition: 0.3s;
+}
+.menu a:hover {
+  color: var(--cor-p5);
+}
+.menu a:hover:after {
+  width: 100%;
+}
+.menu .btn a:after{
+  width:0%;
+}
+#btn-login {
+  background: none;
+}
+#btn-login:hover {
+  background: var(--cor-p2);
+  transition: 0.5s;
+  color: var(--cor-0);
+}
