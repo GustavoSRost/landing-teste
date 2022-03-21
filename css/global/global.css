@@ -19,11 +19,12 @@ a {
 body {
   background: rgb(2, 0, 36);
   background: linear-gradient(
-    90deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(9, 9, 121, 1) 35%,
-    rgba(0, 212, 255, 1) 100%
-  ) repeat-y;
+      90deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(9, 9, 121, 1) 35%,
+      rgba(0, 212, 255, 1) 100%
+    )
+    repeat-y;
   -webkit-font-smoothing: antialiased;
 }
 img {
@@ -39,7 +40,13 @@ img {
   display: grid;
   grid-template-columns: 3fr 2fr;
 }
-.flex{
+.flex {
   display: flex;
   gap: 1.5rem;
+}
+@media (max-width: 800px) {
+  .container {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
 }

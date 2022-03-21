@@ -62,6 +62,9 @@
     .font-2-l-b {
       font-size: 1.125rem;
     }
+    .font-1-l{
+      font-size: 0.9rem;
+    }
   }
   
   @media (max-width: 800px) {

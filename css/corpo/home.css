@@ -13,3 +13,14 @@
   display: flex;
   gap: 1rem;
 }
+@media (max-width: 800px){
+  #home .grid{
+    grid-template-columns: 1fr;
+  }
+  .home-content{
+    gap: 0.3rem;
+  }
+  .banco-img img{
+   display: none !important;
+  }
+}

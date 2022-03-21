@@ -46,3 +46,20 @@
   transition: 0.5s;
   color: var(--cor-0);
 }
+@media (max-width:800px){
+  .navbar{
+    grid-template-columns: 1fr;
+  }
+  .menu  li{
+    border-bottom: 1px solid var(--cor-0);
+  }
+  .menu li.btn{
+    border-bottom: none;
+  }
+  .menu{
+    margin-top: 5px;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.5rem;
+  }
+}

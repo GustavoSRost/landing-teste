@@ -10,3 +10,8 @@
   transition: 0.5s;
   color: var(--cor-p5);
 }
+@media (max-width: 800px) {
+  .btn{
+    padding: 0.45rem;
+  }
+}

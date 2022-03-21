@@ -29,3 +29,12 @@
 .js-accordion dt.active::after {
   content: "▲";
 }
+@media (max-width: 800px){
+  #faq .grid{
+    display: flex;
+    flex-direction: column;
+  }
+  .faq-image{
+    display: none;
+  }
+}

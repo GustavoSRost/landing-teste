@@ -5,7 +5,8 @@
 .redes img{
   width: 50px;
 }
-#contato h1{
+#contato h1,
+#contato h2{
   margin-bottom: 5%;
 }
 #contato .grid{
@@ -20,4 +21,15 @@
 }
 .mapa iframe{
   width: 100%;
+}
+@media (max-width: 800px) {
+  #contato .grid{
+    grid-template-columns: 1fr;
+  }
+  .flex.redes{
+    gap: .5em;
+  }
+  .mapa{
+    margin-top: 10%;
+  }
 }

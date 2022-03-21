@@ -30,3 +30,18 @@
 .sobre-card img {
   width: 20%;
 }
+@media (max-width: 800px){
+  #sobre .container{
+    gap: 20px;
+    padding: 0.5rem;
+  }
+  .sobre-flex{
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .sobre-card{
+    padding: 0.9rem;
+    gap: 0px;
+    align-items:flex-start;
+  }
+}
