@@ -44,4 +44,20 @@
     gap: 0px;
     align-items:flex-start;
   }
+  .sobre-card h1{
+    font-size: 1.3em;
+  }
+}
+@media (max-width: 1200px){
+  .sobre-flex{
+    gap: 10px;
+  }
+  .sobre-card{
+    padding: 0.9rem;
+    gap: 0px;
+  }
+  .sobre-card img{
+    width: 24%;
+    margin-bottom: 15px;
+  }
 }
