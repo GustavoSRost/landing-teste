@@ -22,7 +22,9 @@
   [data-menu="button"].active {
     display: flex;
   }
-
+  .active .btn{
+    background: none;
+  }
   #hamburguer {
     display: block;
     border-top: 2px solid var(--cor-0);

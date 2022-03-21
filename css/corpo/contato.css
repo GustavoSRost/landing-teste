@@ -35,6 +35,9 @@
 }
 @media (max-width: 1200px) {
   #contato .container {
-    padding: 5%;
+    padding: 5% 0 ;
+  }
+  #contato .grid {
+    gap: 20px;
   }
 }

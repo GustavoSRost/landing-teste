@@ -1,4 +1,4 @@
-.home-content{
+.home-content {
   display: flex;
   align-content: center;
   flex-direction: column;
@@ -6,21 +6,27 @@
   align-items: flex-start;
   gap: 1.3rem;
 }
-.home-content h1{
+.home-content h1 {
   margin-bottom: 1rem;
 }
-.botoes-home{
+.botoes-home {
   display: flex;
   gap: 1rem;
 }
-@media (max-width: 800px){
-  #home .grid{
+@media (max-width: 800px) {
+  #home .grid {
     grid-template-columns: 1fr;
   }
-  .home-content{
+  .home-content {
     gap: 0.3rem;
   }
-  .banco-img img{
-   display: none !important;
+  .banco-img img {
+    display: none !important;
+  }
+}
+@media (max-width: 1200px) {
+  .banco-img img {
+    height: 100%;
+    margin-left: 45px;
   }
 }
