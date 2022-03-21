@@ -39,9 +39,10 @@
 }
 #btn-login {
   background: none;
+  border: 1px solid var(--cor-0);
 }
 #btn-login:hover {
-  background: var(--cor-p2);
+  background: var(--cor-0);
   transition: 0.5s;
   color: var(--cor-0);
 }

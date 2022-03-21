@@ -1,0 +1,20 @@
+.footer {
+  background-color: var(--cor-12);
+}
+.footer .container{
+  margin-bottom: 0;
+  padding: 2rem;
+}
+.footer .menu{
+  flex-direction:column;
+}
+.footer .menu a:hover{
+  color: inherit;
+}
+.footer h3{
+  justify-self: center;
+}
+.footer .flex{
+  justify-content: space-around;
+  align-items: center;
+}

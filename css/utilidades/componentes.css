@@ -1,12 +1,12 @@
 .btn {
   padding: 0.8rem;
   background: var(--cor-p5);
-  border: 1px solid var(--cor-p5);
   border-radius: 10px;
-  color: var(--cor-p5)
-}
-.btn:hover{
-  background: var(--cor-p2);
-  transition: .5s;
   color: var(--cor-0);
+}
+.btn:hover {
+  border: 1px solid var(--cor-0);
+  background: var(--cor-p0);
+  transition: 0.5s;
+  color: var(--cor-p5);
 }

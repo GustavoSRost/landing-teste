@@ -1,10 +1,15 @@
-.home-textos{
+.home-content{
   display: flex;
   align-content: center;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  gap: 1.3rem;
 }
-.home-textos h1{
+.home-content h1{
   margin-bottom: 1rem;
+}
+.botoes-home{
+  display: flex;
+  gap: 1rem;
 }

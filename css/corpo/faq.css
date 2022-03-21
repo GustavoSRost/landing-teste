@@ -1,0 +1,31 @@
+#faq{
+  background: var(--cor-0);
+}
+#faq .grid {
+  grid-template-columns: 2fr 1fr;
+}
+.faq-lista dt::before {
+  content: "";
+  display: inline-block;
+  margin-right: 10px;
+  width: 20px;
+  height: 10px;
+  background: var(--cor-p1);
+}
+.faq-content {
+  grid-column: 2;
+}
+.faq-image{
+  grid-column:1;
+  justify-self:center;
+}
+.faq-image img{
+  width: 30vw;
+}
+.js-accordion dt::after {
+  content: "▼";
+  margin-left: 10px;
+}
+.js-accordion dt.active::after {
+  content: "▲";
+}

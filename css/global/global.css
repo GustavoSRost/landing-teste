@@ -23,16 +23,23 @@ body {
     rgba(2, 0, 36, 1) 0%,
     rgba(9, 9, 121, 1) 35%,
     rgba(0, 212, 255, 1) 100%
-  );
+  ) repeat-y;
+  -webkit-font-smoothing: antialiased;
 }
-img{
+img {
   max-width: 100%;
   display: block;
 }
 .container {
-  margin-top: 10%;
   margin-left: 10%;
   margin-right: 10%;
+  padding: 10%;
+}
+.grid {
   display: grid;
   grid-template-columns: 3fr 2fr;
+}
+.flex{
+  display: flex;
+  gap: 1.5rem;
 }
