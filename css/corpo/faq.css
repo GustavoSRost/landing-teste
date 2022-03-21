@@ -1,5 +1,5 @@
-#faq{
-  background: var(--cor-0);
+#faq {
+  background: var(--cor-2);
 }
 #faq .grid {
   grid-template-columns: 2fr 1fr;
@@ -15,12 +15,25 @@
 .faq-content {
   grid-column: 2;
 }
-.faq-image{
-  grid-column:1;
-  justify-self:center;
+.faq-image {
+  grid-column: 1;
+  justify-self: center;
 }
-.faq-image img{
+.faq-image img {
   width: 30vw;
+}
+
+@media (max-width: 800px) {
+  #faq .grid {
+    display: flex;
+    flex-direction: column;
+  }
+  .faq-image {
+    display: none;
+  }
+}
+.js-accordion dl {
+  display: none;
 }
 .js-accordion dt::after {
   content: "▼";
@@ -29,12 +42,17 @@
 .js-accordion dt.active::after {
   content: "▲";
 }
-@media (max-width: 800px){
-  #faq .grid{
-    display: flex;
-    flex-direction: column;
+.js-accordion dl.active {
+  display: block;
+  animation: slideBaixo 0.5s forwards;
+}
+@keyframes slideBaixo {
+  from {
+    opacity: 0;
+    max-height: 0;
   }
-  .faq-image{
-    display: none;
+  to {
+    opacity: 1;
+    max-height: 1000px;
   }
 }

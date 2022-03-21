@@ -14,14 +14,15 @@
 </head>
 
 <body>
-  <header>
+  <header class="js-menu">
     <nav class="navbar">
       <div class="logo">
         <a href="">
           <img src="img/logo.png" alt="Veridian">
         </a>
       </div>
-      <ul class="menu">
+      <button data-menu="button" aria-expanded="false" aria-controls="menu" class='font-1-m cor-0'>Menu</button>
+      <ul class="menu" data-menu="list" id="menu">
         <li class="font-1-m"><a href="index.html">Home</a></li>
         <li class="font-1-m"><a href="#sobre">Sobre</a></li>
         <li class="font-1-m"><a href="#faq">FAQ</a></li>
@@ -31,7 +32,7 @@
       </ul>
     </nav>
   </header>
-  <main id="home">
+  <main id="home" class="js-scroll">
     <div class="container grid">
       <div class="home-content">
         <h1 class="font-1-xxl cor-0">Lorem ipsum dolor sit amet.</h1>
@@ -51,7 +52,7 @@
       </div>
     </div>
   </main>
-  <section id="sobre" class='sobre-bg'>
+  <section id="sobre" class='sobre-bg js-scroll'>
     <div class="grid container">
       <div class="icon-sobre">
         <img class="sobre-card_icon" src="img/icon.png" alt="">
@@ -87,17 +88,10 @@
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime earum architecto laudantium officiis pariatur impedit.
           </p>
         </div>
-        <div class="sobre-card">
-          <img class="sobre-card_icon" src="img/iphone.svg" alt="">
-          <h1 class="font-1-l cor-0">Lorem ipsum dolor sit.</h1>
-          <p class="font-1-s cor-2">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime earum architecto laudantium officiis pariatur impedit.
-          </p>
-        </div>
       </div>
     </div>
   </section>
-  <section id="faq">
+  <section id="faq" class="js-scroll">
     <div class="container grid">
       <h1 class="font-2-xl cor-p4">FAQ</h1>
       <div class="faq-image">
@@ -107,11 +101,11 @@
 
         <dl class="cor-p5 faq-lista js-accordion">
           <dt class="font-1-m cor-p1">Lorem ipsum dolor sit amet.</dt>
-          <dl class="font-1-s">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, quos.</dl>
+          <dl class="font-1-s">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, quos. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt similique corrupti at beatae tempore delectus quia laborum vel cupiditate recusandae.</dl>
           <dt class="font-1-m cor-p1">Lorem ipsum dolor sit amet.</dt>
-          <dl class="font-1-s">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, quos.</dl>
+          <dl class="font-1-s">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, quos. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus, tempore.</dl>
           <dt class="font-1-m cor-p1">Lorem ipsum dolor sit amet.</dt>
-          <dl class="font-1-s">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, quos.</dl>
+          <dl class="font-1-s">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, quos. Lorem ipsum dolor sit amet.</dl>
           <dt class="font-1-m cor-p1">Lorem ipsum dolor sit amet.</dt>
           <dl class="font-1-s">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, quos.</dl>
           <dt class="font-1-m cor-p1">Lorem ipsum dolor sit amet.</dt>
@@ -122,7 +116,7 @@
       </div>
     </div>
   </section>
-  <section id="contato">
+  <section id="contato" class="js-scroll">
     <div class="container">
       <h1 class="font-1-xxl cor-3">Entre em contato conosco!</h1>
       <div class="grid">
@@ -148,7 +142,7 @@
       </div>
     </div>
   </section>
-  <footer class="footer">
+  <footer class="footer js-menu" id="footer">
     <div class="container flex">
       <h3 class="cor-0 font-1-l">Todos os direitos reservados &copy; Gustavo Rost</h3>
       <ul class="menu">
@@ -159,6 +153,7 @@
       </ul>
     </div>
   </footer>
+  <script src="js/script-js.js"></script>
 </body>
 
 </html>

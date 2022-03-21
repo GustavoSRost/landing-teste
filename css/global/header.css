@@ -1,7 +1,7 @@
 .navbar {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  flex-direction: row;
+  justify-items: center;
   background: none;
   margin-right: 5%;
   margin-left: 5%;
@@ -34,8 +34,8 @@
 .menu a:hover:after {
   width: 100%;
 }
-.menu .btn a:after{
-  width:0%;
+.menu .btn a:after {
+  width: 0%;
 }
 #btn-login {
   background: none;
@@ -46,20 +46,37 @@
   transition: 0.5s;
   color: var(--cor-0);
 }
-@media (max-width:800px){
-  .navbar{
-    grid-template-columns: 1fr;
+header.sticky {
+  background-color: var(--cor-p4);
+  width: 100%;
+  position: fixed;
+  align-items: center;
+  top: 0;
+  animation: slideDown 1s forwards;
+  z-index: 1000;
+}
+header.sticky .logo img {
+  height: 60%;
+}
+.sticky .menu a::after {
+  background: var(--cor-3);
+}
+.sticky .menu a:hover {
+  color: var(--cor-3);
+}
+.sticky .logo a > svg {
+  width: 50%;
+  height: 50%;
+}
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    max-height: 0;
+    border-radius: 0;
   }
-  .menu  li{
-    border-bottom: 1px solid var(--cor-0);
-  }
-  .menu li.btn{
-    border-bottom: none;
-  }
-  .menu{
-    margin-top: 5px;
-    flex-direction: column;
-    align-items: stretch;
-    gap: 0.5rem;
+  to {
+    opacity: 1;
+    max-height: 100px;
+    border-radius: 0px 0px 5px 5px;
   }
 }
