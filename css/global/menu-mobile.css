@@ -16,23 +16,38 @@
     height: 3rem;
     align-self: center;
     justify-self: end;
+    gap: 0.5rem;
   }
-  [data-menu="button"].active::before {
-    transform: rotate(90deg);
-    display: inline-block;
-  }
+
   [data-menu="button"].active {
-    display: block;
+    display: flex;
   }
-  [data-menu="button"]::before {
-    margin-right: 4px;
+
+  #hamburguer {
+    display: block;
+    border-top: 2px solid var(--cor-0);
+    width: 20px;
+  }
+  #hamburguer::after,
+  #hamburguer::before {
+    margin-top: 5px;
     content: "";
-    display: inline-block;
+    display: block;
+    width: 20px;
     height: 2px;
-    width: 12px;
-    background: var(--cor-0);
-    box-shadow: 0 4px var(--cor-0), 0 -4px var(--cor-0);
-    transition: transform 0.3s;
+    background-color: currentColor;
+    transition: 0.4s;
+    position: relative;
+  }
+  .active #hamburguer {
+    border-top-color: transparent;
+  }
+  .active #hamburguer::before {
+    transform: rotate(135deg);
+  }
+  .active #hamburguer::after {
+    transform: rotate(-135deg);
+    top: -7px;
   }
   [data-menu="list"] {
     display: none;
